@@ -1,0 +1,52 @@
+{
+  "name": "styled-tag-component",
+  "version": "0.0.1",
+  "description": "styled-component inspired centralized styling library for react",
+  "keywords": [
+    "react",
+    "style"
+  ],
+  "license": "MIT",
+  "author": "sliv <sliv.mbp@gmail.com>",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:browser": "webpack && webpack -p --output-filename StyledTagComponent.min.js",
+    "clean": "rm -rf lib dist",
+    "prepublish": "npm run clean && npm run build && npm run build:browser",
+    "test": "jest"
+  },
+  "browser": "dist/StyledTagComponent.js",
+  "dependencies": {
+    "lodash.mapvalues": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.7.9",
+    "@types/jest": "^19.2.2",
+    "@types/react": "^15.0.22",
+    "@types/react-addons-test-utils": "^0.14.18",
+    "enzyme": "^2.8.2",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "ts-jest": "^19.0.10",
+    "typescript": "^2.2.2"
+  },
+  "peerDependencies": {
+    "@types/react": "^15.0.22",
+    "react": "*"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "umd": "dist/StyledTagComponent.js"
+}

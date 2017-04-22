@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[StyledTagComponent] suite className 1`] = `"<div class=\\"base active\\"></div>"`;
+
+exports[`[StyledTagComponent] suite className 2`] = `"<div class=\\"base\\"></div>"`;
+
+exports[`[StyledTagComponent] suite ifNull 1`] = `"<div></div>"`;
+
+exports[`[StyledTagComponent] suite ifNull 2`] = `null`;
+
+exports[`[StyledTagComponent] suite style 1`] = `"<div style=\\"color:red;background:red;\\">style</div>"`;
+
+exports[`[StyledTagComponent] suite style 2`] = `"<div style=\\"color:blue;background:red;\\">style</div>"`;
+
+exports[`[StyledTagComponent] suite tagName 1`] = `"<div></div>"`;
+
+exports[`[StyledTagComponent] suite tagName 2`] = `"<li></li>"`;
